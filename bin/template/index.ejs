@@ -1,0 +1,28 @@
+const Koa = require("koa");
+
+<% if (config.middleware.router) { %>
+    const Router = require("koa-router");
+<% } %>
+
+
+<% if (config.middleware.static) { %>
+    const serve = require("koa-static");
+<% } %>
+
+const app = new Koa();
+
+<% if (config.middleware.static) { %>
+    app.use(serve(__dirname + "/static"));
+<% } %>
+
+<% if (config.middleware.router) { %>
+    const router = new Router();
+    router.get("/", (ctx) => {
+    ctx.body = "hello koa-cli from LC";
+    });
+    app.use(router.routes());
+<% } %>
+
+app.listen(<%= config.port %>,()=>{
+console.log("open server localhost:<%= config.port %>")
+})
