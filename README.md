@@ -1,10 +1,10 @@
 <h1 align="center">Welcome to koa-cli 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/koa-cli" target="_blank">
+  <a href="https://www.npmjs.com" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/koa-cli.svg">
   </a>
   <img src="https://img.shields.io/badge/node-%3E13.0.0-blue.svg" />
-  <a href="https://gitee.com/ahviplc/koa-clii" target="_blank">
+  <a href="https://gitee.com/ahviplc/koa-cli" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
