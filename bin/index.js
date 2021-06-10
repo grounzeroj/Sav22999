@@ -14,8 +14,10 @@ const log = console.log;
 
 // 开始实际逻辑代码
 const answer = await question();
+// 将用户所有的交互答案放入一个config里
 const config = createConfig(answer);
 console.log('...config...  => ', config)
+// 从config里拿出用户自己配置的项目名
 const packageName = config.packageName;
 
 console.log('...getRootPath2(packageName) => ', getRootPath2(packageName))
