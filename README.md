@@ -25,13 +25,19 @@
 ## Install
 
 ```sh
+yarn
 yarn install
+或者
+npm i
+npm install
 ```
 
 ## Usage
 
 ```sh
 yarn app
+或者
+npm run app
 ```
 
 ## Run tests
@@ -40,6 +46,15 @@ yarn app
 
 ```sh
 yarn run test
+```
+
+`Done`
+
+```sh
+npm run app:test
+或
+yarn app:test
+yarn run app:test
 ```
 
 ## Author

@@ -8,7 +8,7 @@ import createIndexTemplate from "./createIndexTemplate.js";
 import createPackageTemplate from "./createPackageTemplate.js";
 import question from "./question/index.js";
 import {createConfig} from "./config.js";
-import {fsExistsSync, deleteall, getRootPath2, createPath} from './utils/commonUtils.js'
+import {fsExistsSync, deleteall, getRootPath2, createPath, isWinOS, isMacOS, isLinuxOS} from './utils/commonUtils.js'
 
 const log = console.log;
 
@@ -22,6 +22,9 @@ const packageName = config.packageName;
 
 console.log('...getRootPath2(packageName) => ', getRootPath2(packageName))
 console.log('...createPath(packageName, fileName) => ', createPath(packageName, 'index.js'))
+console.log('...isWinOS()...', isWinOS())
+console.log('...isMacOS()...', isMacOS())
+console.log('...isLinuxOS()...', isLinuxOS())
 
 // 前期处理
 // 生成dist文件夹 用于存放生成的项目
@@ -64,11 +67,21 @@ log(chalk.blue(`No.4. 创建项目的根目录json -> package.json`));
 fs.writeFileSync(createPath(packageName, 'package.json'), createPackageTemplate(config));
 
 // 5. 安装依赖
-log(chalk.blue(`No.5. 安装依赖 -> yarn`));
-await execa("yarn", {
-    cwd: getRootPath2(packageName),
-    stdio: [2, 2, 2],
-});
+// 下面代码 使用yarn安装依赖 win 下执行有问题
+// 判断 如果是win系统的话 改成 npm i 来安装依赖 就没有问题了
+if (isWinOS()) { // 是win系统
+    log(chalk.blue(`No.5. 安装依赖 -> npm i`));
+    await execa("npm i", { // npm install
+        cwd: getRootPath2(packageName),
+        stdio: [2, 2, 2],
+    });
+} else { // 是其他系统
+    log(chalk.blue(`No.5. 安装依赖 -> yarn`));
+    await execa("yarn", { // yarn install
+        cwd: getRootPath2(packageName),
+        stdio: [2, 2, 2],
+    });
+}
 
 // 6. 安装结束
 log(chalk.blue(`No.6. 正式安装结束 ... QAQ ...`));

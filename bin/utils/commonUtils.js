@@ -43,9 +43,33 @@ function createPath(packageName, fileName) {
     return path.resolve(getRootPath2(packageName), fileName);
 }
 
+// 判断是否为win操作系统
+// 是的话 process.platform 会输出 win32
+// windows 系统内核
+function isWinOS(){
+    return process.platform == 'win32'
+}
+
+// 判断是否为mac操作系统
+// 是的话 process.platform 会输出 darwin
+// mac核心 是 unix 系统内核
+function isMacOS(){
+    return process.platform == 'darwin'
+}
+
+// 判断是否为Linux操作系统
+// 是的话 process.platform 会输出 linux
+// unix 系统内核
+function isLinuxOS(){
+    return process.platform == 'linux'
+}
+
 export {
     fsExistsSync,
     deleteall,
     getRootPath2,
-    createPath
+    createPath,
+    isWinOS,
+    isMacOS,
+    isLinuxOS
 }
