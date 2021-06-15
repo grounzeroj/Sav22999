@@ -5,8 +5,15 @@
   "main": "./bin/index.js",
   "type": "module",
   "bin": {
-    "koa-cli": "bin/index.js"
+    "koa-cli": "bin/index.js",
+    "koa-cli-app": "bin/index.js"
   },
+  "files": [
+    "bin",
+    "package.json",
+    "README.md",
+    ".gitignore"
+  ],
   "engines": {
     "node": ">13.0.0"
   },
