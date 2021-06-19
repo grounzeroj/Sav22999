@@ -87,6 +87,6 @@ if (isWinOS()) { // 是win系统
 log(chalk.blue(`No.6. 正式安装结束 ... QAQ ...`));
 log('--------------------------------------------------------------------------------------')
 log(chalk.blue(`No.7. enjoy it ...`));
-log(chalk.hex("#7FFF00").bold(`cd ./dist/${config.packageName} && nodemon index.js`));
+log(chalk.hex("#16c936").bold(`cd ./dist/${config.packageName} && nodemon index.js`));
 log(chalk.hex("#DEADED").bold("happy every day -_-# !~LC"));
 log('--------------------------------------------------------------------------------------')
