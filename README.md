@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to koa-cli 👋</h1>
+<h1 align="center">Welcome to koa-cli-man 👋</h1>
 <p>
   <a href="https://www.npmjs.com" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/koa-cli.svg">
@@ -12,11 +12,15 @@
   </a>
 </p>
 
-> koa-cli,一个新的web框架koa示例代码生成脚手架.
+> koa-cli-man,一个新的web框架koa示例代码生成脚手架.
 
-### 🏠 [Homepage](https://gitee.com/ahviplc/koa-cli)
+### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/koa-cli)
 
-### ✨ [Demo](https://gitee.com/ahviplc/koa-cli)
+### ✨ [Demo-gitee](https://gitee.com/ahviplc/koa-cli)
+
+### 🏠 [Homepage-github](https://github.com/ahviplc/koa-cli)
+
+### ✨ [Demo-github](https://github.com/ahviplc/koa-cli)
 
 ## Prerequisites
 
@@ -30,6 +34,24 @@ yarn install
 或者
 npm i
 npm install
+```
+
+## npm全局安装与使用
+
+`全局npm安装`
+
+```sh
+npm i koa-cli-man -g
+```
+
+`全局命令使用` `使用下面命令`
+
+```sh
+koa-cli-man
+或者
+kcman
+或者
+koa-cli
 ```
 
 ## Usage
