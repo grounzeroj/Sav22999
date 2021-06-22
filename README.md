@@ -36,12 +36,16 @@ npm i
 npm install
 ```
 
-## npm全局安装与使用
+## npm或yarn全局安装与使用
 
-`全局npm安装`
+`全局npm安装或yarn安装`
 
 ```sh
-npm i koa-cli-man -g
+npm i -g koa-cli-man
+或者
+npm install -g koa-cli-man
+或者 TODO yarn
+yarn add global koa-cli-man
 ```
 
 `全局命令使用` `使用下面命令`

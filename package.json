@@ -1,6 +1,6 @@
 {
   "name": "koa-cli-man",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "koa-cli-man,一个新的web框架koa示例代码生成脚手架.",
   "main": "./bin/index.js",
   "type": "module",
