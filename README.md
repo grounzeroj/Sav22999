@@ -12,7 +12,12 @@
   </a>
 </p>
 
-> koa-cli-man,一个新的web框架koa示例代码生成脚手架.
+> koa-cli-man,一款基于nodejs的新的web框架koa示例代码生成脚手架.
+ 
+`koa-cli-man`,采用的package.json配置`"type":"module",`使用esm规范.
+
+也可默认为`"type": "commonjs",`采用的commonjs模块规范.
+
 
 ### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/koa-cli)
 
