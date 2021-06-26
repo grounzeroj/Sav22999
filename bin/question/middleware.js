@@ -1,12 +1,12 @@
 export default () => ({
-  type: "checkbox",
-  name: "middleware",
+  type: 'checkbox',
+  name: 'middleware',
   choices: [
     {
-      name: "koaStatic",
+      name: 'koaStatic'
     },
     {
-      name: "koaRouter",
-    },
-  ],
+      name: 'koaRouter'
+    }
+  ]
 });

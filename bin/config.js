@@ -1,5 +1,4 @@
 export function createConfig(answer) {
-
   function haveMiddleware(name) {
     return answer.middleware.indexOf(name) !== -1;
   }
@@ -8,8 +7,8 @@ export function createConfig(answer) {
     packageName: answer.packageName,
     port: answer.port,
     middleware: {
-      static: haveMiddleware("koaStatic"),
-      router: haveMiddleware("koaRouter"),
-    },
+      static: haveMiddleware('koaStatic'),
+      router: haveMiddleware('koaRouter')
+    }
   };
 }
