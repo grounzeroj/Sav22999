@@ -4,7 +4,7 @@
     <img alt="Version" src="https://img.shields.io/npm/v/koa-cli.svg">
   </a>
   <img src="https://img.shields.io/badge/node-%3E13.0.0-blue.svg" />
-  <a href="https://gitee.com/ahviplc/koa-cli" target="_blank">
+  <a href="https://gitee.com/ahviplc/koa-cli-man" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
@@ -18,14 +18,17 @@
 
 也可默认为`"type": "commonjs",`采用的commonjs模块规范.
 
+### 🏠 [npm | ahviplc](https://www.npmjs.com/~ahviplc)
 
-### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/koa-cli)
+### 🏠 [npm | koa-cli-man](https://www.npmjs.com/package/koa-cli-man)
 
-### ✨ [Demo-gitee](https://gitee.com/ahviplc/koa-cli)
+### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/koa-cli-man)
 
-### 🏠 [Homepage-github](https://github.com/ahviplc/koa-cli)
+### ✨ [Demo-gitee](https://gitee.com/ahviplc/koa-cli-man)
 
-### ✨ [Demo-github](https://github.com/ahviplc/koa-cli)
+### 🏠 [Homepage-github](https://github.com/ahviplc/koa-cli-man)
+
+### ✨ [Demo-github](https://github.com/ahviplc/koa-cli-man)
 
 ## Prerequisites
 
