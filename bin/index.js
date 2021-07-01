@@ -20,16 +20,17 @@ console.log('...config...  => ', config);
 // 从config里拿出用户自己配置的项目名
 const packageName = config.packageName;
 
-console.log('...getRootPath2(packageName) => ', getRootPath2(packageName));
-console.log('...createPath(packageName, fileName) => ', createPath(packageName, 'index.js'));
-console.log('...isWinOS()...', isWinOS());
-console.log('...isMacOS()...', isMacOS());
-console.log('...isLinuxOS()...', isLinuxOS());
+// console.log('...getRootPath2(packageName) => ', getRootPath2(packageName));
+// console.log('...createPath(packageName, fileName) => ', createPath(packageName, 'index.js'));
+// console.log('...isWinOS()...', isWinOS());
+// console.log('...isMacOS()...', isMacOS());
+// console.log('...isLinuxOS()...', isLinuxOS());
 
 // 前期处理
 // 生成dist文件夹 用于存放生成的项目
 const codeFolder = path.resolve(process.cwd(), 'dist');
-console.log('...codeFolder => ', codeFolder);
+
+// console.log('...codeFolder => ', codeFolder);
 
 log('--------------------------------------------------------------------------------------');
 log(chalk.blue('...正式安装之前的准备工作 开始 ...'));
