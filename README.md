@@ -30,6 +30,12 @@
 
 ### ✨ [Demo-github](https://github.com/ahviplc/koa-cli-man)
 
+## koa-cli-man npm api
+
+`可以查看此npm模块的信息json串`
+
+> http://registry.npmjs.org/koa-cli-man
+
 ## Prerequisites
 
 - node >13.0.0
