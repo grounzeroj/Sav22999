@@ -3,8 +3,8 @@ export default () => {
     type: 'input',
     name: 'port',
     default() {
-      return 8066;
+      return 8066
     },
     message: 'set prot number'
-  };
-};
+  }
+}

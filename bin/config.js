@@ -1,6 +1,6 @@
 export function createConfig(answer) {
   function haveMiddleware(name) {
-    return answer.middleware.indexOf(name) !== -1;
+    return answer.middleware.indexOf(name) !== -1
   }
 
   return {
@@ -10,5 +10,5 @@ export function createConfig(answer) {
       static: haveMiddleware('koaStatic'),
       router: haveMiddleware('koaRouter')
     }
-  };
+  }
 }
