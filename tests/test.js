@@ -18,10 +18,10 @@ console.log('isLinuxOS()', isLinuxOS())
 
 // -------------------------
 
-function getRootPath() {
+function getRootPath () {
   return path.resolve(process.cwd(), 'lc')
 }
 
-function createPath(fileName) {
+function createPath (fileName) {
   return path.resolve(getRootPath(), fileName)
 }

@@ -1,5 +1,5 @@
-export function createConfig(answer) {
-  function haveMiddleware(name) {
+export function createConfig (answer) {
+  function haveMiddleware (name) {
     return answer.middleware.indexOf(name) !== -1
   }
 
