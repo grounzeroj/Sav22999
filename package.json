@@ -34,7 +34,7 @@
     "node"
   ],
   "author": "LC ahlc@sina.cn",
-  "homepage": "https://gitee.com/ahviplc/koa-cli",
+  "homepage": "https://gitee.com/ahviplc/koa-cli-man",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
